@@ -1,0 +1,26 @@
+[project]
+name = "romanian-childlm-experiments"
+version = "1.0.0"
+description = "Training and evaluation code for Romanian ChildLM experiments"
+requires-python = ">=3.10"
+authors = [{name = "Anonymous"}]
+dependencies = [
+  "accelerate>=1.7",
+  "huggingface-hub>=0.32",
+  "numpy>=2.0",
+  "torch>=2.7",
+  "tokenizers==0.22.2",
+  "tqdm>=4.67",
+  "transformers==5.15.1",
+  "wandb>=0.19",
+]
+
+[project.optional-dependencies]
+babybabellm = ["pyarrow>=19"]
+
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

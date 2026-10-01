@@ -1,0 +1,53 @@
+Licensing for this repository
+
+1. Our code (code/, results/aggregate.py, and results/figures/plot.py): MIT License.
+   Third-party code retains its upstream copyright and license notices.
+
+MIT License
+
+Copyright (c) 2026 Anonymous
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+2. Our metadata, manifests, result summaries, figure data, and statistics
+   (data/, except multiblimp-ron.tsv, and results/): Creative Commons
+   Attribution 4.0 International (CC BY 4.0). These files describe publicly
+   posted videos; the caption text itself is not included and is not covered.
+   License text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+3. Third-party assets keep their own licenses:
+
+- MultiBLiMP 1.0, Jumelet et al., 2025: the unchanged Romanian data is
+  CC-BY-4.0. Full attribution is in data/README.md. Its Apache-2.0 code is
+  not included.
+- GPT-BERT, Charpentier and Samuel, 2024: the original implementation is
+  MIT licensed at https://github.com/ltgoslo/gpt-bert. Its copyright notice
+  is preserved in code/vendor/gpt_bert/LICENSE.
+  Our runs also use https://github.com/babylm-org/multilingual-training.
+  That implementation and converter are not bundled because we have not
+  confirmed a license for those modifications. Obtain the pinned checkout
+  separately as described in code/README.md. The original GPT-BERT license
+  does not assign a license to those modifications.
+- BabyBabelLM Romanian, Jumelet et al., 2026: not included. The Hugging Face
+  dataset is gated and lists an unknown aggregate license, with licensing
+  metadata for individual documents. Obtain it from the source linked in
+  code/README.md.
+- YouTube captions: not included. Creators retain rights over caption text.
+  The manifests contain identifiers, metadata and hashes. Rehydration is
+  subject to platform terms and availability.

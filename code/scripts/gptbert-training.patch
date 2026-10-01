@@ -1,0 +1,126 @@
+--- a/train.py
++++ b/train.py
+@@ -168,6 +168,46 @@
+     return model, ema_model, optimizer, scheduler, global_step, epoch
+ 
+ 
++
++def causal_validation(model, tokenizer, args):
++    """Mean causal loss over the validation shards at the base seq_length."""
++    data = CausalDataset(args.valid_path, tokenizer, args, args.seq_length, rank=None, world_size=None)
++    loader = iter(DataLoader(data, shuffle=False, batch_size=args.local_batch_size,
++                             num_workers=0, drop_last=False, pin_memory=True))
++    model.eval()
++    total, batches = 0.0, 0
++    with torch.no_grad():
++        while True:
++            try:
++                input_ids, attention_mask, target_ids, _ = get_batch(loader, args.device, 0)
++            except StopIteration:
++                break
++            with torch.cuda.amp.autocast(args.mixed_precision, dtype=torch.bfloat16):
++                out = model(input_ids, attention_mask, target_ids, 0, args.ratio)
++            total += float(out[2])
++            batches += 1
++    model.train()
++    return total / max(batches, 1)
++
++
++def maybe_save_best(model, tokenizer, args, global_step):
++    import json as _json
++    val = causal_validation(model, tokenizer, args)
++    torch.cuda.empty_cache()
++    rec = {"global_step": global_step, "causal_val_loss": val,
++           "gpu_mem_gb": round(torch.cuda.memory_allocated() / 1e9, 2)}
++    with open(os.path.join(os.path.dirname(args.output_path), args.name + "_val_log.jsonl"), "a") as f:
++        f.write(_json.dumps(rec) + "\n")
++    best_attr = getattr(args, "_best_val", None)
++    if best_attr is None or val < best_attr:
++        args._best_val = val
++        model_to_save = model.module if hasattr(model, "module") else model
++        torch.save(model_to_save.state_dict(), args.output_path.replace(".bin", "_best.bin"))
++        with open(os.path.join(os.path.dirname(args.output_path), args.name + "_best.json"), "w") as f:
++            f.write(_json.dumps(rec))
++    return val
++
++
+ def get_batch(dataloader, device, global_step):
+     # dataloader._dataset.set_global_step(global_step)
+     batch = next(dataloader)
+@@ -208,22 +248,18 @@
+     train_seed = args.seed + epoch
+ 
+     # Dynamic sequence length & batch scaling
+-    if (global_step + 1) / args.max_steps >= 0.9:
+-        seq_length = args.seq_length * 4
+-        global_batch_size = args.global_batch_size // 4
+-    elif (global_step + 1) / args.max_steps >= 0.7:
+-        seq_length = args.seq_length * 2
+-        global_batch_size = args.global_batch_size // 2
+-    else:
+-        seq_length = args.seq_length
+-        global_batch_size = args.global_batch_size
++    # Fixed sequence length throughout (Feng et al.'s setting for external
++    # corpora such as TinyDialogues/CHILDES); avoids the long-sequence memory
++    # spike of the BabyView schedule on 32GB GPUs.
++    seq_length = args.seq_length
++    global_batch_size = args.global_batch_size
+ 
+     ratio = args.hybrid_numerator / args.hybrid_denominator if mode == "masked" else 1 - (args.hybrid_numerator / args.hybrid_denominator)
+ 
+     # Reload dataset if seq_length changed
+     rebuild_dataset = train_dataloader is None or train_dataloader.dataset.seq_length != seq_length
+     if rebuild_dataset:
+-        shard_dir = os.path.join(os.path.dirname(args.train_path), "shards/train")
++        shard_dir = args.train_path
+         print(f"Initializing {mode} dataset with seq_length={seq_length}...")
+ 
+         if mode == "masked":
+@@ -378,8 +414,8 @@
+ 
+             # add the tracked metrics (for gradient accumulation)
+             total_loss += loss.detach() * weight
+-            total_accuracy += accuracy * weight
+-            total_z_loss += z_loss * weight
++            total_accuracy += (accuracy.detach() if hasattr(accuracy, 'detach') else accuracy) * weight
++            total_z_loss += z_loss.detach() * weight
+ 
+         # get the next batch
+         if local_step < num_steps - 1:
+@@ -445,6 +481,10 @@
+         # checkpoint the model and the full training state
+         if global_step % args.save_every == 0:
+             save(model, ema_model, optimizer, scheduler, global_step, masked_epoch, causal_epoch, args)
++
++        if global_step % args.validate_every == 0 or global_step == args.max_steps:
++            v = maybe_save_best(model, tokenizer, args, global_step)
++            print(f"validation step={global_step} causal_val_loss={v:.4f}", flush=True)
+         # log the stats and commit
+         if is_main_process():
+            wandb.log({"global_step": global_step}, commit=True)
+@@ -533,10 +573,10 @@
+             total_loss += loss.detach() * weight
+             total_masked_loss += (masked_loss.detach() if masked_loss > 0.0 else 0.0) * weight
+             total_causal_loss += (causal_loss.detach() if causal_loss > 0.0 else 0.0) * weight
+-            total_accuracy += accuracy * weight
+-            total_masked_accuracy += masked_accuracy * weight
+-            total_causal_accuracy += causal_accuracy * weight
+-            total_z_loss += z_loss * weight
++            total_accuracy += (accuracy.detach() if hasattr(accuracy, 'detach') else accuracy) * weight
++            total_masked_accuracy += (masked_accuracy.detach() if hasattr(masked_accuracy, 'detach') else masked_accuracy) * weight
++            total_causal_accuracy += (causal_accuracy.detach() if hasattr(causal_accuracy, 'detach') else causal_accuracy) * weight
++            total_z_loss += z_loss.detach() * weight
+ 
+             num_masked = max(0, num_masked - args.local_batch_size)
+ 
+@@ -588,6 +628,10 @@
+         if global_step % args.save_every == 0:
+             save(model, ema_model, optimizer, scheduler, global_step, masked_epoch, causal_epoch, args)
+ 
++        if global_step % args.validate_every == 0 or global_step == args.max_steps:
++            v = maybe_save_best(model, tokenizer, args, global_step)
++            print(f"validation step={global_step} causal_val_loss={v:.4f}", flush=True)
++
+         # log the stats and commit
+         if is_main_process():
+            wandb.log({"global_step": global_step}, commit=True)
