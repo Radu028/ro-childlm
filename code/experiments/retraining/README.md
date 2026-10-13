@@ -28,9 +28,7 @@ python code/experiments/retraining/retrain.py collect retraining/* \
 `--reference` is the original run's folder and `--prepared` its preparation;
 use `--every 0` for the two conditions with fixed update budgets. `collect` stores
 each run's accuracy at the checkpoint selected by validation loss next to the
-original run's. The reported 40 runs used the research copy of the trainer; the
-public `babyscale_gpt2.py` differs from it only in type hints, argument names,
-error handling and how `main()` exits.
+original run's.
 
 ## Analysis rules, fixed before the runs
 
