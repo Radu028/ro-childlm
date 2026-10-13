@@ -1,4 +1,4 @@
-"""Evaluate a GPT-2 run with its training-text normalization.
+"""Evaluate a GPT-2 run with the normalization of its training text.
 
 Use the BabyBabelLM causal scoring protocol. Ties count as errors and are
 also reported separately.

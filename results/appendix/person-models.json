@@ -1,0 +1,196 @@
+{
+ "subjects": {
+  "third": {
+   "NOUN": 755,
+   "PRON": 45
+  },
+  "first_second": {
+   "PRON": 189,
+   "NOUN": 25
+  }
+ },
+ "gpt2_small_20ep": {
+  "third": {
+   "n": 800,
+   "captions": 76.625,
+   "bbl": 87.125,
+   "bbl_minus_captions": 10.5,
+   "ci95_source_sentences": [
+    7.964601769911504,
+    13.008962868117798
+   ],
+   "source_sentences": 525
+  },
+  "first_second": {
+   "n": 214,
+   "captions": 61.308411214953274,
+   "bbl": 62.33644859813084,
+   "bbl_minus_captions": 1.0280373831775698,
+   "ci95_source_sentences": [
+    -4.729064039408867,
+    6.697247706422019
+   ],
+   "source_sentences": 83
+  },
+  "third_vs_first": {
+   "n": 400,
+   "captions": 71.89999999999999,
+   "bbl": 82.75,
+   "bbl_minus_captions": 10.85,
+   "ci95_source_sentences": [
+    7.365728900255755,
+    14.236453201970441
+   ],
+   "source_sentences": 373
+  },
+  "third_vs_second": {
+   "n": 400,
+   "captions": 81.35,
+   "bbl": 91.5,
+   "bbl_minus_captions": 10.149999999999999,
+   "ci95_source_sentences": [
+    7.2081218274111665,
+    13.16708229426434
+   ],
+   "source_sentences": 383
+  }
+ },
+ "gpt2_small_10ep": {
+  "third": {
+   "n": 800,
+   "captions": 79.75,
+   "bbl": 88.225,
+   "bbl_minus_captions": 8.475,
+   "ci95_source_sentences": [
+    6.061349693251533,
+    10.929936305732484
+   ],
+   "source_sentences": 525
+  },
+  "first_second": {
+   "n": 214,
+   "captions": 61.58878504672898,
+   "bbl": 61.02803738317757,
+   "bbl_minus_captions": -0.560747663551402,
+   "ci95_source_sentences": [
+    -6.794258373205741,
+    5.555555555555556
+   ],
+   "source_sentences": 83
+  },
+  "third_vs_first": {
+   "n": 400,
+   "captions": 74.25,
+   "bbl": 83.45,
+   "bbl_minus_captions": 9.2,
+   "ci95_source_sentences": [
+    5.777777777777778,
+    12.524752475247524
+   ],
+   "source_sentences": 373
+  },
+  "third_vs_second": {
+   "n": 400,
+   "captions": 85.25,
+   "bbl": 93.0,
+   "bbl_minus_captions": 7.75,
+   "ci95_source_sentences": [
+    4.975124378109453,
+    10.603015075376884
+   ],
+   "source_sentences": 383
+  }
+ },
+ "gpt2_17m": {
+  "third": {
+   "n": 800,
+   "captions": 81.0,
+   "bbl": 89.67500000000001,
+   "bbl_minus_captions": 8.674999999999999,
+   "ci95_source_sentences": [
+    6.314496314496315,
+    11.108374384236452
+   ],
+   "source_sentences": 525
+  },
+  "first_second": {
+   "n": 214,
+   "captions": 61.6822429906542,
+   "bbl": 62.33644859813084,
+   "bbl_minus_captions": 0.6542056074766353,
+   "ci95_source_sentences": [
+    -6.523605150214593,
+    7.777777777777778
+   ],
+   "source_sentences": 83
+  },
+  "third_vs_first": {
+   "n": 400,
+   "captions": 76.4,
+   "bbl": 84.8,
+   "bbl_minus_captions": 8.399999999999999,
+   "ci95_source_sentences": [
+    4.773869346733668,
+    12.02020202020202
+   ],
+   "source_sentences": 373
+  },
+  "third_vs_second": {
+   "n": 400,
+   "captions": 85.6,
+   "bbl": 94.55,
+   "bbl_minus_captions": 8.95,
+   "ci95_source_sentences": [
+    6.234413965087281,
+    11.773399014778326
+   ],
+   "source_sentences": 383
+  }
+ },
+ "gptbert_20ep": {
+  "third": {
+   "n": 800,
+   "captions": 74.65,
+   "bbl": 86.55000000000001,
+   "bbl_minus_captions": 11.899999999999999,
+   "ci95_source_sentences": [
+    9.172932330827068,
+    14.651457541191382
+   ],
+   "source_sentences": 525
+  },
+  "first_second": {
+   "n": 214,
+   "captions": 65.51401869158879,
+   "bbl": 71.58878504672897,
+   "bbl_minus_captions": 6.074766355140187,
+   "ci95_source_sentences": [
+    -0.6091370558375638,
+    12.825112107623319
+   ],
+   "source_sentences": 83
+  },
+  "third_vs_first": {
+   "n": 400,
+   "captions": 70.85000000000001,
+   "bbl": 82.35,
+   "bbl_minus_captions": 11.5,
+   "ci95_source_sentences": [
+    8.070175438596491,
+    15.05050505050505
+   ],
+   "source_sentences": 373
+  },
+  "third_vs_second": {
+   "n": 400,
+   "captions": 78.45,
+   "bbl": 90.75,
+   "bbl_minus_captions": 12.3,
+   "ci95_source_sentences": [
+    9.12718204488778,
+    15.388471177944862
+   ],
+   "source_sentences": 383
+  }
+ }
+}

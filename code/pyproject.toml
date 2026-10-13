@@ -3,7 +3,11 @@ name = "romanian-childlm-experiments"
 version = "1.0.0"
 description = "Training and evaluation code for Romanian ChildLM experiments"
 requires-python = ">=3.10"
-authors = [{name = "Anonymous"}]
+authors = [
+  {name = "Radu-Stefan Popa"},
+  {name = "Adina Camelia Bleotu"},
+  {name = "Sergiu Nisioi"},
+]
 dependencies = [
   "accelerate>=1.7",
   "huggingface-hub>=0.32",
@@ -17,6 +21,9 @@ dependencies = [
 
 [project.optional-dependencies]
 babybabellm = ["pyarrow>=19"]
+# Appendix analyses: t-tests and crossed intervals; Stanza for the corpus person counts.
+analysis = ["scipy>=1.11"]
+stanza = ["stanza==1.15.0"]
 
 [build-system]
 requires = ["setuptools>=80"]

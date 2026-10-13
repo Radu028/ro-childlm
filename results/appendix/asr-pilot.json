@@ -1,0 +1,164 @@
+{
+ "groups": {
+  "0-4 automatic": {
+   "windows": 16,
+   "words": 1253,
+   "wer": 0.025538707102952914,
+   "wer_ci95": [
+    0.017321016166281754,
+    0.03383162863886703
+   ],
+   "agreement_words": 356,
+   "agreement_error_rate": 0.028089887640449437,
+   "agreement_error_ci95": [
+    0.008645533141210375,
+    0.05113636363636364
+   ],
+   "feature_rate": 0.014044943820224719,
+   "feature_ci95": [
+    0.002881844380403458,
+    0.028169014084507043
+   ]
+  },
+  "0-4 creator": {
+   "windows": 4,
+   "words": 318,
+   "wer": 0.050314465408805034,
+   "wer_ci95": [
+    0.016666666666666666,
+    0.15384615384615385
+   ],
+   "agreement_words": 94,
+   "agreement_error_rate": 0.0425531914893617,
+   "agreement_error_ci95": [
+    0.007936507936507936,
+    0.1111111111111111
+   ],
+   "feature_rate": 0.010638297872340425,
+   "feature_ci95": [
+    0.0,
+    0.025
+   ]
+  },
+  "5-8 automatic": {
+   "windows": 16,
+   "words": 1167,
+   "wer": 0.056555269922879174,
+   "wer_ci95": [
+    0.032706459525756335,
+    0.0867237687366167
+   ],
+   "agreement_words": 297,
+   "agreement_error_rate": 0.05387205387205387,
+   "agreement_error_ci95": [
+    0.02564102564102564,
+    0.08914728682170543
+   ],
+   "feature_rate": 0.010101010101010102,
+   "feature_ci95": [
+    0.0,
+    0.025974025974025976
+   ]
+  },
+  "5-8 creator": {
+   "windows": 4,
+   "words": 388,
+   "wer": 0.03608247422680412,
+   "wer_ci95": [
+    0.006896551724137931,
+    0.10300429184549356
+   ],
+   "agreement_words": 117,
+   "agreement_error_rate": 0.03418803418803419,
+   "agreement_error_ci95": [
+    0.0,
+    0.08403361344537816
+   ],
+   "feature_rate": 0.0,
+   "feature_ci95": [
+    0.0,
+    0.0
+   ]
+  },
+  "Automatic, weighted": {
+   "windows": 32,
+   "words": 2420,
+   "wer": 0.04026308223256134,
+   "wer_ci95": [
+    0.02825171837442029,
+    0.0552039485790548
+   ],
+   "agreement_words": 653,
+   "agreement_error_rate": 0.03962422757775639,
+   "agreement_error_ci95": [
+    0.0223703169493637,
+    0.05904917891017015
+   ],
+   "feature_rate": 0.012280519845955828,
+   "feature_ci95": [
+    0.004213877070586286,
+    0.02257281812305648
+   ]
+  },
+  "All, weighted": {
+   "windows": 40,
+   "words": 3126,
+   "wer": 0.0403759815229149,
+   "wer_ci95": [
+    0.028634643011590296,
+    0.0549416415708541
+   ],
+   "agreement_words": 864,
+   "agreement_error_rate": 0.03960869194217217,
+   "agreement_error_ci95": [
+    0.022793772498246063,
+    0.058296857161655447
+   ],
+   "feature_rate": 0.012103327636839903,
+   "feature_ci95": [
+    0.004189142236328178,
+    0.022099199311540637
+   ]
+  }
+ },
+ "audio": {
+  "speech": {
+   "windows": 28,
+   "unweighted_wer": 0.027391304347826086
+  },
+  "singing": {
+   "windows": 9,
+   "unweighted_wer": 0.07779578606158834
+  },
+  "mixed": {
+   "windows": 3,
+   "unweighted_wer": 0.08133971291866028
+  }
+ },
+ "minutes": 39.666666666666664,
+ "videos": 40,
+ "channels": 19,
+ "name_tokens": 103,
+ "names_left_out": 29,
+ "agreement_categories": {
+  "deletion": 6,
+  "lexical": 18,
+  "spelling": 1,
+  "feature": 9
+ },
+ "feature_changes": {
+  "total": 9,
+  "word_end": 9,
+  "second_person_i": 5
+ },
+ "checks": {
+  "selected": {
+   "checked": 60,
+   "agreement_bearing": 60
+  },
+  "other": {
+   "checked": 60,
+   "agreement_bearing": 3
+  }
+ }
+}

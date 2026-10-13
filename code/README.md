@@ -13,7 +13,7 @@ python code/scripts/setup_gptbert.py --upstream ../multilingual-training
 Setup applies our training patch and builds the local converter in
 `code/vendor/gpt_bert/`. Upstream code is not bundled; see `LICENSE`.
 
-## GPT-2 124M
+## GPT-2 small
 
 Retrieve captions for `data/manifest-*.jsonl` through authorized platform
 access. Save one JSONL per band with `video_id` and `text` on each line.
@@ -42,7 +42,7 @@ python -m romanian_childlm.training.evaluate_babyscale \
 
 Use seeds `42`, `0`, `123`, `321`, `9000` and separate output directories
 for each preparation and run. `--allow-other-corpora` permits re-serialized
-input files; duplicate-ID and supplied word-count checks still apply.
+input files; the checks for duplicate IDs and supplied word counts still apply.
 
 - Age runs: add `--bands 0-4` or `--bands 5-8`, plus `--tokenizer-from prepared`
   to preparation.
@@ -50,7 +50,7 @@ input files; duplicate-ID and supplied word-count checks still apply.
   without `--tokenizer-from`. Whole documents may exceed the target slightly.
 - Ten-epoch schedule: add `--epochs 10` to training; the default is 20.
 
-The primary document-selection seed is 42. Condition names are in
+The primary seed for document selection is 42. Condition names are in
 [results/README.md](../results/README.md).
 
 ## GPT-2 17M
@@ -74,7 +74,7 @@ and the final checkpoint after 10 epochs. Punctuation is retained.
 
 ## GPT-BERT
 
-Use a 16,384-token vocabulary and a 1:1 masked-to-causal objective ratio:
+Use a 16,384-token vocabulary and a 1:1 ratio of masked and causal objectives:
 
 ```bash
 python code/scripts/prepare_gptbert.py \
@@ -102,7 +102,7 @@ python code/scripts/evaluate_hf_causal_model.py \
 
 For age and scaling runs, reuse the combined tokenizer with
 `prepare_gptbert.py --tokenizer-from prepared-gptbert/tokenizer.json`.
-The matched-budget comparison instead trains a tokenizer on each corpus.
+The comparison with matched budgets instead trains a tokenizer on each corpus.
 
 ## BabyBabelLM comparison
 
@@ -128,7 +128,7 @@ python code/scripts/run_babyscale_gpt2_small.py prepare \
 
 Expected: 18,739 documents, 956,285 normalized words. Here `--bands 0-4`
 selects an input slot, not an age label. Use `prepared-babybabellm` in the
-124M commands above. For GPT-BERT, prepare it with a fresh tokenizer.
+GPT-2 small commands above. For GPT-BERT, prepare it with a fresh tokenizer.
 
 For 17M, use the tokenizer from the
 [released Romanian baseline](https://huggingface.co/BabyLM-community/ron-baseline-small):
@@ -147,3 +147,36 @@ python code/scripts/replicate_babybabellm_recipe.py \
 
 Evaluate without `--strip-punctuation`. Use the released tokenizer, but train
 the model from scratch; no pretrained model weights enter this replication.
+
+## Appendix analyses and experiments
+
+`src/romanian_childlm/analysis/` reproduces the appendix numbers from the
+saved results; [results/appendix/README.md](../results/appendix/README.md)
+lists the commands. `pip install -e "code[analysis]"` adds scipy for the
+t-tests and crossed intervals, and `code[stanza]` the tagger for the corpus
+person counts. The code for the appendix experiments is in
+[experiments/](experiments/README.md).
+
+## Draws from shared channels
+
+`scripts/select_shared_channel_draws.py` selects the draws for the analysis of sensitivity
+to media source from the two full subsets:
+
+```bash
+python code/scripts/select_shared_channel_draws.py CORPUS_ROOT OUT_DIR 42 1 2 3 4
+```
+
+`CORPUS_ROOT` holds `0-4/transcripts/corpus.jsonl` and `5-8/transcripts/corpus.jsonl`. For
+each seed and profile the script writes `matched-<profile>-seed-<seed>.jsonl` to `OUT_DIR`,
+with the lines copied unchanged from the corpus.
+
+Both profiles draw only from the 27 channels found under both, and each channel gets the same
+word quota in both: 2,000,000 x min(w04, w58) / 2,857,135, rounded down, where w04 and w58 are
+the channel's clean words in each full subset and 2,857,135 is the sum of these minima. Each
+profile and draw uses one `random.Random(seed)`. The script goes through the shared channels
+in name order, sorts each channel's documents by video ID and shuffles them. No draw uses two
+of the shared channels, but the script still shuffles them, so they advance the generator.
+In the other 25 channels the script takes documents in shuffled order until the quota is
+reached, skipping any document that would end more than 500 words above it.
+
+The script reproduces the ten selections behind the reported runs byte for byte.

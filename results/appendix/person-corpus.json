@@ -1,0 +1,46 @@
+{
+ "captions_1m_train": {
+  "words": 794032,
+  "finite_by_upos_person_number": {
+   "AUX|1|": 147,
+   "AUX|1|Plur": 1027,
+   "AUX|1|Sing": 242,
+   "AUX|2|Plur": 499,
+   "AUX|2|Sing": 2502,
+   "AUX|3|": 898,
+   "AUX|3|Plur": 5137,
+   "AUX|3|Sing": 16449,
+   "VERB|1|": 843,
+   "VERB|1|Plur": 14811,
+   "VERB|1|Sing": 14852,
+   "VERB|2|": 40,
+   "VERB|2|Plur": 5761,
+   "VERB|2|Sing": 16042,
+   "VERB|3|": 15870,
+   "VERB|3|Plur": 7557,
+   "VERB|3|Sing": 19848
+  }
+ },
+ "bbl_1m_train": {
+  "words": 787875,
+  "finite_by_upos_person_number": {
+   "AUX|1|": 214,
+   "AUX|1|Plur": 415,
+   "AUX|1|Sing": 153,
+   "AUX|2|Plur": 175,
+   "AUX|2|Sing": 1855,
+   "AUX|3|": 635,
+   "AUX|3|Plur": 3175,
+   "AUX|3|Sing": 11921,
+   "VERB|1|": 1271,
+   "VERB|1|Plur": 5150,
+   "VERB|1|Sing": 13472,
+   "VERB|2|": 32,
+   "VERB|2|Plur": 2026,
+   "VERB|2|Sing": 21436,
+   "VERB|3|": 11762,
+   "VERB|3|Plur": 5748,
+   "VERB|3|Sing": 30033
+  }
+ }
+}

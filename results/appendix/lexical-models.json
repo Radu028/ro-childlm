@@ -1,0 +1,118 @@
+{
+ "gptbert_20ep": {
+  "inputs": "train",
+  "all": {
+   "n": 2056,
+   "captions": 67.1011673151751,
+   "bbl": 73.84241245136187,
+   "bbl_minus_captions": 6.7412451361867705,
+   "ci95_source_sentences": [
+    4.910063198833252,
+    8.650833754421425
+   ],
+   "source_sentences": 1204
+  },
+  "both": {
+   "n": 1639,
+   "captions": 71.00671140939598,
+   "bbl": 76.52226967663209,
+   "bbl_minus_captions": 5.51555826723612,
+   "ci95_source_sentences": [
+    3.6701797892126473,
+    7.333333333333333
+   ],
+   "source_sentences": 964
+  },
+  "bbl_only": {
+   "n": 249,
+   "captions": 52.44979919678715,
+   "bbl": 75.7429718875502,
+   "bbl_minus_captions": 23.293172690763054,
+   "ci95_source_sentences": [
+    16.0,
+    30.53435114503817
+   ],
+   "source_sentences": 160
+  },
+  "captions_only": {
+   "n": 29,
+   "captions": 60.689655172413794,
+   "bbl": 42.758620689655174,
+   "bbl_minus_captions": -17.93103448275862,
+   "ci95_source_sentences": [
+    -35.333333333333336,
+    -0.6451612903225801
+   ],
+   "source_sentences": 22
+  },
+  "neither": {
+   "n": 139,
+   "captions": 48.63309352517985,
+   "bbl": 45.32374100719424,
+   "bbl_minus_captions": -3.3093525179856123,
+   "ci95_source_sentences": [
+    -12.205882352941178,
+    5.511811023622047
+   ],
+   "source_sentences": 102
+  }
+ },
+ "gpt2_17m": {
+  "inputs": "trainval",
+  "all": {
+   "n": 2056,
+   "captions": 70.91439688715954,
+   "bbl": 73.59922178988327,
+   "bbl_minus_captions": 2.684824902723735,
+   "ci95_source_sentences": [
+    0.7569141193595341,
+    4.6094129063561375
+   ],
+   "source_sentences": 1204
+  },
+  "both": {
+   "n": 1647,
+   "captions": 74.03764420157863,
+   "bbl": 76.72131147540983,
+   "bbl_minus_captions": 2.683667273831208,
+   "ci95_source_sentences": [
+    0.5755395683453236,
+    4.86882245271507
+   ],
+   "source_sentences": 970
+  },
+  "bbl_only": {
+   "n": 256,
+   "captions": 57.96875,
+   "bbl": 66.015625,
+   "bbl_minus_captions": 8.046875,
+   "ci95_source_sentences": [
+    2.0077220077220077,
+    13.916349809885931
+   ],
+   "source_sentences": 164
+  },
+  "captions_only": {
+   "n": 26,
+   "captions": 59.23076923076923,
+   "bbl": 43.84615384615385,
+   "bbl_minus_captions": -15.384615384615385,
+   "ci95_source_sentences": [
+    -30.0,
+    -2.142857142857144
+   ],
+   "source_sentences": 19
+  },
+  "neither": {
+   "n": 127,
+   "captions": 58.89763779527559,
+   "bbl": 54.48818897637795,
+   "bbl_minus_captions": -4.409448818897639,
+   "ci95_source_sentences": [
+    -12.24137931034483,
+    3.4848484848484844
+   ],
+   "source_sentences": 94
+  }
+ }
+}

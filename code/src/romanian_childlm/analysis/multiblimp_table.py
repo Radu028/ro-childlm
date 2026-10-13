@@ -1,4 +1,4 @@
-"""Print per-condition and per-phenomenon results from a summary JSONL file."""
+"""Print results by condition and by phenomenon from a summary JSONL file."""
 
 from __future__ import annotations
 

@@ -1,0 +1,398 @@
+{
+ "gpt2_small_20ep": {
+  "inputs": "train",
+  "draw-1": {
+   "all": {
+    "n": 2056,
+    "captions": 67.79182879377433,
+    "bbl": 73.15175097276264,
+    "bbl_minus_captions": 5.3599221789883265,
+    "ci95_source_sentences": [
+     3.4778465936160075,
+     7.260406582768635
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1695,
+    "captions": 72.16519174041298,
+    "bbl": 75.976401179941,
+    "bbl_minus_captions": 3.811209439528023,
+    "ci95_source_sentences": [
+     1.9251992642550577,
+     5.704099821746881
+    ],
+    "source_sentences": 985
+   }
+  },
+  "draw-2": {
+   "all": {
+    "n": 2056,
+    "captions": 67.21789883268482,
+    "bbl": 73.15175097276264,
+    "bbl_minus_captions": 5.93385214007782,
+    "ci95_source_sentences": [
+     4.10280818657782,
+     7.840853954391072
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1637,
+    "captions": 71.48442272449603,
+    "bbl": 76.188149053146,
+    "bbl_minus_captions": 4.703726328649969,
+    "ci95_source_sentences": [
+     2.6929982046678633,
+     6.6911314984709485
+    ],
+    "source_sentences": 970
+   }
+  },
+  "draw-3": {
+   "all": {
+    "n": 2056,
+    "captions": 67.01361867704281,
+    "bbl": 73.15175097276264,
+    "bbl_minus_captions": 6.138132295719844,
+    "ci95_source_sentences": [
+     4.264205925206411,
+     8.015992003998
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1665,
+    "captions": 70.73873873873873,
+    "bbl": 76.0,
+    "bbl_minus_captions": 5.261261261261261,
+    "ci95_source_sentences": [
+     3.363042186571598,
+     7.161094224924011
+    ],
+    "source_sentences": 975
+   }
+  },
+  "draw-4": {
+   "all": {
+    "n": 2056,
+    "captions": 68.6284046692607,
+    "bbl": 73.15175097276264,
+    "bbl_minus_captions": 4.523346303501945,
+    "ci95_source_sentences": [
+     2.760314341846758,
+     6.358267716535433
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1653,
+    "captions": 73.53901996370236,
+    "bbl": 76.40653357531761,
+    "bbl_minus_captions": 2.867513611615245,
+    "ci95_source_sentences": [
+     1.0735122520420068,
+     4.709976798143852
+    ],
+    "source_sentences": 960
+   }
+  }
+ },
+ "gpt2_small_10ep": {
+  "inputs": "train",
+  "draw-1": {
+   "all": {
+    "n": 2056,
+    "captions": 69.42607003891051,
+    "bbl": 73.37548638132296,
+    "bbl_minus_captions": 3.949416342412451,
+    "ci95_source_sentences": [
+     2.1351616062683645,
+     5.769603097773475
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1695,
+    "captions": 73.75811209439527,
+    "bbl": 76.18879056047197,
+    "bbl_minus_captions": 2.430678466076696,
+    "ci95_source_sentences": [
+     0.6490384615384612,
+     4.2590431738623105
+    ],
+    "source_sentences": 985
+   }
+  },
+  "draw-2": {
+   "all": {
+    "n": 2056,
+    "captions": 68.84241245136187,
+    "bbl": 73.37548638132296,
+    "bbl_minus_captions": 4.533073929961089,
+    "ci95_source_sentences": [
+     2.716403634624581,
+     6.4054848188050935
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1637,
+    "captions": 73.36591325595602,
+    "bbl": 76.50580329871717,
+    "bbl_minus_captions": 3.1398900427611482,
+    "ci95_source_sentences": [
+     1.2700369913686802,
+     5.023923444976076
+    ],
+    "source_sentences": 970
+   }
+  },
+  "draw-3": {
+   "all": {
+    "n": 2056,
+    "captions": 69.00778210116731,
+    "bbl": 73.37548638132296,
+    "bbl_minus_captions": 4.367704280155642,
+    "ci95_source_sentences": [
+     2.555282555282555,
+     6.210268948655257
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1665,
+    "captions": 72.98498498498499,
+    "bbl": 76.31231231231232,
+    "bbl_minus_captions": 3.327327327327327,
+    "ci95_source_sentences": [
+     1.5394165114835503,
+     5.104602510460251
+    ],
+    "source_sentences": 975
+   }
+  },
+  "draw-4": {
+   "all": {
+    "n": 2056,
+    "captions": 68.99805447470817,
+    "bbl": 73.37548638132296,
+    "bbl_minus_captions": 4.3774319066147855,
+    "ci95_source_sentences": [
+     2.6179018286814246,
+     6.175771971496437
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1653,
+    "captions": 73.86569872958258,
+    "bbl": 76.61222020568663,
+    "bbl_minus_captions": 2.746521476104053,
+    "ci95_source_sentences": [
+     0.9661835748792268,
+     4.521432765707575
+    ],
+    "source_sentences": 960
+   }
+  }
+ },
+ "gptbert_20ep": {
+  "inputs": "train",
+  "draw-1": {
+   "all": {
+    "n": 2056,
+    "captions": 68.40466926070039,
+    "bbl": 73.84241245136187,
+    "bbl_minus_captions": 5.437743190661479,
+    "ci95_source_sentences": [
+     3.4965719882468167,
+     7.441634241245136
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1695,
+    "captions": 72.35398230088495,
+    "bbl": 77.05014749262537,
+    "bbl_minus_captions": 4.696165191740413,
+    "ci95_source_sentences": [
+     2.782401902497027,
+     6.654867256637168
+    ],
+    "source_sentences": 985
+   }
+  },
+  "draw-2": {
+   "all": {
+    "n": 2056,
+    "captions": 68.41439688715954,
+    "bbl": 73.84241245136187,
+    "bbl_minus_captions": 5.428015564202335,
+    "ci95_source_sentences": [
+     3.4983181162902452,
+     7.366316841579211
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1637,
+    "captions": 73.18265119120342,
+    "bbl": 77.08002443494196,
+    "bbl_minus_captions": 3.8973732437385458,
+    "ci95_source_sentences": [
+     2.002518891687657,
+     5.747406955460646
+    ],
+    "source_sentences": 970
+   }
+  },
+  "draw-3": {
+   "all": {
+    "n": 2056,
+    "captions": 68.59922178988327,
+    "bbl": 73.84241245136187,
+    "bbl_minus_captions": 5.243190661478598,
+    "ci95_source_sentences": [
+     3.3186920448999504,
+     7.1923076923076925
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1665,
+    "captions": 72.36036036036036,
+    "bbl": 76.97297297297297,
+    "bbl_minus_captions": 4.612612612612612,
+    "ci95_source_sentences": [
+     2.8089210367691377,
+     6.403881140084899
+    ],
+    "source_sentences": 975
+   }
+  },
+  "draw-4": {
+   "all": {
+    "n": 2056,
+    "captions": 67.95719844357977,
+    "bbl": 73.84241245136187,
+    "bbl_minus_captions": 5.885214007782101,
+    "ci95_source_sentences": [
+     3.9492930277913207,
+     7.830588235294117
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1653,
+    "captions": 72.35329703569268,
+    "bbl": 76.98729582577133,
+    "bbl_minus_captions": 4.633998790078644,
+    "ci95_source_sentences": [
+     2.73921200750469,
+     6.523076923076923
+    ],
+    "source_sentences": 960
+   }
+  }
+ },
+ "gpt2_17m": {
+  "inputs": "trainval",
+  "draw-1": {
+   "all": {
+    "n": 2056,
+    "captions": 70.4863813229572,
+    "bbl": 73.59922178988327,
+    "bbl_minus_captions": 3.11284046692607,
+    "ci95_source_sentences": [
+     1.2095238095238094,
+     5.056124938994631
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1708,
+    "captions": 73.62997658079625,
+    "bbl": 76.68618266978923,
+    "bbl_minus_captions": 3.0562060889929743,
+    "ci95_source_sentences": [
+     0.9936452917388792,
+     5.171377029464823
+    ],
+    "source_sentences": 992
+   }
+  },
+  "draw-2": {
+   "all": {
+    "n": 2056,
+    "captions": 69.8249027237354,
+    "bbl": 73.59922178988327,
+    "bbl_minus_captions": 3.77431906614786,
+    "ci95_source_sentences": [
+     1.8548774627582896,
+     5.689819219790676
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1664,
+    "captions": 73.95432692307692,
+    "bbl": 76.875,
+    "bbl_minus_captions": 2.920673076923077,
+    "ci95_source_sentences": [
+     0.8737283064033513,
+     4.95
+    ],
+    "source_sentences": 983
+   }
+  },
+  "draw-3": {
+   "all": {
+    "n": 2056,
+    "captions": 69.12451361867704,
+    "bbl": 73.59922178988327,
+    "bbl_minus_captions": 4.474708171206226,
+    "ci95_source_sentences": [
+     2.4987654320987653,
+     6.44307982994804
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1693,
+    "captions": 72.817483756645,
+    "bbl": 76.30242173656232,
+    "bbl_minus_captions": 3.484937979917307,
+    "ci95_source_sentences": [
+     1.2934131736526946,
+     5.653206650831354
+    ],
+    "source_sentences": 992
+   }
+  },
+  "draw-4": {
+   "all": {
+    "n": 2056,
+    "captions": 70.21400778210118,
+    "bbl": 73.59922178988327,
+    "bbl_minus_captions": 3.385214007782101,
+    "ci95_source_sentences": [
+     1.478174603174603,
+     5.330776605944392
+    ],
+    "source_sentences": 1204
+   },
+   "both": {
+    "n": 1667,
+    "captions": 74.44511097780445,
+    "bbl": 76.52069586082784,
+    "bbl_minus_captions": 2.0755848830233954,
+    "ci95_source_sentences": [
+     0.04739336492890999,
+     4.1084337349397595
+    ],
+    "source_sentences": 971
+   }
+  }
+ }
+}

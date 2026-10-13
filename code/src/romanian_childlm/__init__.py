@@ -1,1 +1,1 @@
-"""Romanian ChildLM corpus collection pipeline."""
+"""Training, evaluation and analysis code for the Romanian ChildLM experiments."""

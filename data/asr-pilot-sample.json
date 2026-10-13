@@ -1,0 +1,608 @@
+{
+ "seed": 42,
+ "unit": "60 s interval",
+ "corpus_sha256": {
+  "0-4": "5df7fee5bd75afdb1bf07de6c88098725ad9f84abc8843cf77624c6c5809a5e1",
+  "5-8": "5cd21e635ec22312915adfcc4e2dfc2b501aa9f1d71db8d60cb5ba9645204a05"
+ },
+ "strata": {
+  "0-4/automatic": {
+   "intervals": 63552,
+   "sampled": 16,
+   "reserves": 4,
+   "weight": 3972.0
+  },
+  "0-4/manual": {
+   "intervals": 1930,
+   "sampled": 4,
+   "reserves": 2,
+   "weight": 482.5
+  },
+  "5-8/automatic": {
+   "intervals": 61669,
+   "sampled": 16,
+   "reserves": 4,
+   "weight": 3854.3125
+  },
+  "5-8/manual": {
+   "intervals": 1093,
+   "sampled": 4,
+   "reserves": 2,
+   "weight": 273.25
+  }
+ },
+ "sample": [
+  {
+   "audit_id": "A46",
+   "stratum": "0-4/automatic",
+   "rank": 0,
+   "reserve": false,
+   "video_id": "S--mZA3Sh7s",
+   "channel": "AnimaCars - Română",
+   "start_s": 2340,
+   "end_s": 2400,
+   "text_sha256": "03d4858c8b3f46a1f479f42755d68501de6ae239ffc1cc5801627ab10ab5525d"
+  },
+  {
+   "audit_id": "A23",
+   "stratum": "0-4/automatic",
+   "rank": 1,
+   "reserve": false,
+   "video_id": "MDGlRFCeJyg",
+   "channel": "PufPuf - Cantece pentru copii",
+   "start_s": 900,
+   "end_s": 960,
+   "text_sha256": "5b0e3ca1d5bafad3c9bfc43c5f5f6ae141055174626baf79f609b191ce9e1c2b"
+  },
+  {
+   "audit_id": "A45",
+   "stratum": "0-4/automatic",
+   "rank": 2,
+   "reserve": false,
+   "video_id": "_O-O8zithyQ",
+   "channel": "Bobiţă şi Buburuză",
+   "start_s": 6900,
+   "end_s": 6960,
+   "text_sha256": "2a1bb053a873c3990b2520bb3d18756a2eb565defc8953e3e16d13ed91e37133"
+  },
+  {
+   "audit_id": "A20",
+   "stratum": "0-4/automatic",
+   "rank": 3,
+   "reserve": false,
+   "video_id": "ie3DoLldehI",
+   "channel": "Rosie și prietenii ei",
+   "start_s": 1260,
+   "end_s": 1320,
+   "text_sha256": "6f0e185c2a393e301f4914ad0b6293ed6764774e02c6b0641b39732ebab87cce"
+  },
+  {
+   "audit_id": "A16",
+   "stratum": "0-4/automatic",
+   "rank": 4,
+   "reserve": false,
+   "video_id": "uaUx1N8MsKo",
+   "channel": "Tom the Tow Truck - Română",
+   "start_s": 60,
+   "end_s": 120,
+   "text_sha256": "8652657c4bc7818c8940c613fb8a88f899274719b044d4267442a3e65c67b5ab"
+  },
+  {
+   "audit_id": "A48",
+   "stratum": "0-4/automatic",
+   "rank": 5,
+   "reserve": false,
+   "video_id": "ahjfrdNw7O4",
+   "channel": "Romanian Fairy Tales",
+   "start_s": 480,
+   "end_s": 540,
+   "text_sha256": "031f8d7fce9d59dfe28e75601ba3a21c149b2ab40dae3a759bf5bab386b5a6fc"
+  },
+  {
+   "audit_id": "A39",
+   "stratum": "0-4/automatic",
+   "rank": 6,
+   "reserve": false,
+   "video_id": "Xi-WxAOcBbY",
+   "channel": "Bing România - Canal Oficial",
+   "start_s": 4560,
+   "end_s": 4620,
+   "text_sha256": "1f881dee044a83d13f55a6ee5c772470e472ce42e5624e7092c92f5ef0635305"
+  },
+  {
+   "audit_id": "A50",
+   "stratum": "0-4/automatic",
+   "rank": 7,
+   "reserve": false,
+   "video_id": "HNepQD1VDbg",
+   "channel": "AlaBala - Desene animate dublate în română",
+   "start_s": 780,
+   "end_s": 840,
+   "text_sha256": "dd6086cdcc2d7595bd70c2273c8d531d397faa2bcef95db1bb9f2fa2ca6d6b64"
+  },
+  {
+   "audit_id": "A13",
+   "stratum": "0-4/automatic",
+   "rank": 8,
+   "reserve": false,
+   "video_id": "XSvv8UezfQw",
+   "channel": "Bing România - Canal Oficial",
+   "start_s": 2700,
+   "end_s": 2760,
+   "text_sha256": "38ac191ce39cc0e00ce8ee7a1d4a95a7232fe520b51868eb2d2581e775461a1c"
+  },
+  {
+   "audit_id": "A18",
+   "stratum": "0-4/automatic",
+   "rank": 9,
+   "reserve": false,
+   "video_id": "p8NgcfPCXNo",
+   "channel": "Fixiki - desene animate in romana",
+   "start_s": 1740,
+   "end_s": 1800,
+   "text_sha256": "679de95e1142a5450b38cdf7cdce74e3c5df8866e75809dfc61e39ee61370325"
+  },
+  {
+   "audit_id": "A38",
+   "stratum": "0-4/automatic",
+   "rank": 10,
+   "reserve": false,
+   "video_id": "UfakotyzIuU",
+   "channel": "AlaBala - Desene animate dublate în română",
+   "start_s": 3180,
+   "end_s": 3240,
+   "text_sha256": "ccd435a3b5c358fce462db558caf26864944d9c03f4e2a6330aff4f47604b2c7"
+  },
+  {
+   "audit_id": "A52",
+   "stratum": "0-4/automatic",
+   "rank": 11,
+   "reserve": false,
+   "video_id": "pBIuA54L-FE",
+   "channel": "Refrenele Copilariei de la TraLaLa",
+   "start_s": 5460,
+   "end_s": 5520,
+   "text_sha256": "5288469effac43570b14db1e17d02b508e07bf0539efd6fa3345fe927aa308e7"
+  },
+  {
+   "audit_id": "A11",
+   "stratum": "0-4/automatic",
+   "rank": 12,
+   "reserve": false,
+   "video_id": "GzEl0Nhj2pg",
+   "channel": "Fixiki - desene animate in romana",
+   "start_s": 4260,
+   "end_s": 4320,
+   "text_sha256": "b6b65a76680b118df7c69b95f81aaae7ab4e121bbdb5349ff13fca3282c6559e"
+  },
+  {
+   "audit_id": "A36",
+   "stratum": "0-4/automatic",
+   "rank": 13,
+   "reserve": false,
+   "video_id": "WKTfjjyIKP4",
+   "channel": "Bing România - Canal Oficial",
+   "start_s": 4980,
+   "end_s": 5040,
+   "text_sha256": "4e93f5b665ad6b225a491c50bd896e038b8e1f2e3279d9eea80721ee7e369ee8"
+  },
+  {
+   "audit_id": "A28",
+   "stratum": "0-4/automatic",
+   "rank": 14,
+   "reserve": false,
+   "video_id": "9VEqSJr-wzI",
+   "channel": "HeyKids - Desene animate si povesti pentru copii",
+   "start_s": 1620,
+   "end_s": 1680,
+   "text_sha256": "0f235b9120d720a425cf2c210f1322a4d3efb3d8bd8fdc3f0e936b40ed3788ba"
+  },
+  {
+   "audit_id": "A35",
+   "stratum": "0-4/automatic",
+   "rank": 15,
+   "reserve": false,
+   "video_id": "ooIx6XFItPg",
+   "channel": "TraLaLa DSN - Desene Animate ",
+   "start_s": 1260,
+   "end_s": 1320,
+   "text_sha256": "684d4008e97ae06c4153d47f4d1cde9adb00c8eba1d1942cf28fb4baba841164"
+  },
+  {
+   "audit_id": "A17",
+   "stratum": "0-4/automatic",
+   "rank": 16,
+   "reserve": true,
+   "video_id": "Tg1UWJM4dYk",
+   "channel": "BabyRiki Romana - Desene animate pentru copii",
+   "start_s": 720,
+   "end_s": 780,
+   "text_sha256": "641c490b9d0c12cf5fda4e2cead8d9c0cd63e133e3d20255fdfeacf1f3350819"
+  },
+  {
+   "audit_id": "A29",
+   "stratum": "0-4/automatic",
+   "rank": 17,
+   "reserve": true,
+   "video_id": "Mb0pzksxC8o",
+   "channel": "HeyKids - Desene animate si povesti pentru copii",
+   "start_s": 600,
+   "end_s": 660,
+   "text_sha256": "24f171edaa6d4612c5870f20047265aac4c2277dfa7d7f84366e2c926f975a97"
+  },
+  {
+   "audit_id": "A51",
+   "stratum": "0-4/automatic",
+   "rank": 18,
+   "reserve": true,
+   "video_id": "Ai26fZf5sGc",
+   "channel": "Romanian Fairy Tales",
+   "start_s": 360,
+   "end_s": 420,
+   "text_sha256": "76b2651571248b29866211dc7d3e6cde25f1320e2cd36e8db94fcf537ae02b05"
+  },
+  {
+   "audit_id": "A15",
+   "stratum": "0-4/automatic",
+   "rank": 19,
+   "reserve": true,
+   "video_id": "W7946eBunh4",
+   "channel": "TraLaLa - Cantece si desene animate pentru copii",
+   "start_s": 2820,
+   "end_s": 2880,
+   "text_sha256": "6b207d08931cad29fbc95d717be25db5c7b367dd9cce3e1bc0cb0e7a5c738a5b"
+  },
+  {
+   "audit_id": "A47",
+   "stratum": "0-4/manual",
+   "rank": 0,
+   "reserve": false,
+   "video_id": "342ZCqnrMx0",
+   "channel": "Fixiki - desene animate in romana",
+   "start_s": 2220,
+   "end_s": 2280,
+   "text_sha256": "b7a1b387bc4163e08be586d06ecbb3992851171d8ca13e0e8fe2f6f99202240d"
+  },
+  {
+   "audit_id": "A32",
+   "stratum": "0-4/manual",
+   "rank": 1,
+   "reserve": false,
+   "video_id": "rceiYnkGV2s",
+   "channel": "Fixiki - desene animate in romana",
+   "start_s": 7260,
+   "end_s": 7320,
+   "text_sha256": "e8d231ab385657c26613a245ff104cee6f1e5872717f23f0c339cd85224f1987"
+  },
+  {
+   "audit_id": "A03",
+   "stratum": "0-4/manual",
+   "rank": 2,
+   "reserve": false,
+   "video_id": "rbiaq6P5PtY",
+   "channel": "TraLaLa - Cantece si desene animate pentru copii",
+   "start_s": 1800,
+   "end_s": 1860,
+   "text_sha256": "1846a624d15d4d65002dd671de670661e97e8123af44777c1112c0b992b79fc6"
+  },
+  {
+   "audit_id": "A41",
+   "stratum": "0-4/manual",
+   "rank": 3,
+   "reserve": false,
+   "video_id": "ZjGeGREmdP0",
+   "channel": "HeyKids - Desene animate si povesti pentru copii",
+   "start_s": 420,
+   "end_s": 480,
+   "text_sha256": "ae3b11b05d542b816bc14b33216a895a06acb227425b60118705303ab7c62c49"
+  },
+  {
+   "audit_id": "A43",
+   "stratum": "0-4/manual",
+   "rank": 4,
+   "reserve": true,
+   "video_id": "a6I9NrYdGu4",
+   "channel": "Fixiki - desene animate in romana",
+   "start_s": 780,
+   "end_s": 840,
+   "text_sha256": "0ed4e75a5517b50692821583525f872cb432d05ef2fa9cced757d136e2ce6b3e"
+  },
+  {
+   "audit_id": "A10",
+   "stratum": "0-4/manual",
+   "rank": 5,
+   "reserve": true,
+   "video_id": "DlNEEezrVTM",
+   "channel": "Cantecele Copii",
+   "start_s": 60,
+   "end_s": 102,
+   "text_sha256": "7dfadcfbeb88d4ab9a45734b34960a42bab5d975a6e6fbe27f1b036826114c4c"
+  },
+  {
+   "audit_id": "A30",
+   "stratum": "5-8/automatic",
+   "rank": 0,
+   "reserve": false,
+   "video_id": "u6SAv4bAYss",
+   "channel": "BabyBus in romana Cantece si Desene Animate Copii",
+   "start_s": 1080,
+   "end_s": 1140,
+   "text_sha256": "76dd01d56d1d3dc4c5e7c6cbe7566a40b4e3358a4f8aeb21cb4b264b65cb62a3"
+  },
+  {
+   "audit_id": "A25",
+   "stratum": "5-8/automatic",
+   "rank": 1,
+   "reserve": false,
+   "video_id": "i9yq9HBbZa0",
+   "channel": "AlaBala - Desene animate dublate în română",
+   "start_s": 2940,
+   "end_s": 3000,
+   "text_sha256": "d0bc531253b9b35b467394b88e7db281c25e0b62374dc31edcccd0819468cb00"
+  },
+  {
+   "audit_id": "A34",
+   "stratum": "5-8/automatic",
+   "rank": 2,
+   "reserve": false,
+   "video_id": "3m7YnrYqi9k",
+   "channel": "BabyRiki Romana - Desene animate pentru copii",
+   "start_s": 1500,
+   "end_s": 1560,
+   "text_sha256": "f3e2beb7a47c55b73de9cb8af72fcfc86f8abee549afd4b8b4cade943604bee6"
+  },
+  {
+   "audit_id": "A37",
+   "stratum": "5-8/automatic",
+   "rank": 3,
+   "reserve": false,
+   "video_id": "nPIDnnzBsmM",
+   "channel": "Cry Babies România",
+   "start_s": 360,
+   "end_s": 420,
+   "text_sha256": "907bcdbab0374946ff94ba5337929224948638fe3c6c12447b150b7b3385483e"
+  },
+  {
+   "audit_id": "A49",
+   "stratum": "5-8/automatic",
+   "rank": 4,
+   "reserve": false,
+   "video_id": "nGY5kINl2aY",
+   "channel": "TraLaLa - Cantece si desene animate pentru copii",
+   "start_s": 660,
+   "end_s": 720,
+   "text_sha256": "188d81e080a61c6ff80df627d696049a90745eb1e2995e49a43e3eaf0f62b1d3"
+  },
+  {
+   "audit_id": "A06",
+   "stratum": "5-8/automatic",
+   "rank": 5,
+   "reserve": false,
+   "video_id": "8W6j2VWyJMU",
+   "channel": "BoonBoon",
+   "start_s": 2460,
+   "end_s": 2520,
+   "text_sha256": "3f3f09a316f9edb8fc9f35c5fad0981249a27d63830bef8417710cbfb5cbf83a"
+  },
+  {
+   "audit_id": "A33",
+   "stratum": "5-8/automatic",
+   "rank": 6,
+   "reserve": false,
+   "video_id": "vRYV6nHxzqs",
+   "channel": "Bing România - Canal Oficial",
+   "start_s": 3600,
+   "end_s": 3660,
+   "text_sha256": "e34819ea9ce12efbe4c798d910d7e7cff5414c28513b7736993c5c74666fcfdc"
+  },
+  {
+   "audit_id": "A26",
+   "stratum": "5-8/automatic",
+   "rank": 7,
+   "reserve": false,
+   "video_id": "e-kh_rLiM0s",
+   "channel": "TraLaLa - Cantece si desene animate pentru copii",
+   "start_s": 180,
+   "end_s": 240,
+   "text_sha256": "711f091b022a7149ffa42884dd77f88b86a058380209d9de96913b59f88b492b"
+  },
+  {
+   "audit_id": "A42",
+   "stratum": "5-8/automatic",
+   "rank": 8,
+   "reserve": false,
+   "video_id": "HlWoJEUrvVA",
+   "channel": "BoonBoon",
+   "start_s": 600,
+   "end_s": 660,
+   "text_sha256": "cd9432c1156384c3908c9bb637a409b6cf0b962d2b6d5f9937acc7edd0b5c4ce"
+  },
+  {
+   "audit_id": "A07",
+   "stratum": "5-8/automatic",
+   "rank": 9,
+   "reserve": false,
+   "video_id": "e9E2Quxl_pU",
+   "channel": "Fixiki - desene animate in romana",
+   "start_s": 180,
+   "end_s": 240,
+   "text_sha256": "8c29c1967e67cacd7c113e48ae24bd1131558fc3d855c21fdbfad3de0ec8ba2a"
+  },
+  {
+   "audit_id": "A24",
+   "stratum": "5-8/automatic",
+   "rank": 10,
+   "reserve": false,
+   "video_id": "ObLv-e-n6mA",
+   "channel": "AlaBala - Desene animate dublate în română",
+   "start_s": 3660,
+   "end_s": 3709,
+   "text_sha256": "5fac4b4039a6b1d46d02a08a18e9ca85487749f7177aed0096bd805a3d4692ca"
+  },
+  {
+   "audit_id": "A27",
+   "stratum": "5-8/automatic",
+   "rank": 11,
+   "reserve": false,
+   "video_id": "torhgrAA7sk",
+   "channel": "Bing România - Canal Oficial",
+   "start_s": 5460,
+   "end_s": 5520,
+   "text_sha256": "123fcc86dc8cfb11a3db9101581a7cae4f631df4f63091161596dd402defb1cd"
+  },
+  {
+   "audit_id": "A01",
+   "stratum": "5-8/automatic",
+   "rank": 12,
+   "reserve": false,
+   "video_id": "zeJUTv_DWf8",
+   "channel": "TraLaLa - Cantece si desene animate pentru copii",
+   "start_s": 2280,
+   "end_s": 2340,
+   "text_sha256": "8baad0e900cb2e540dc9ad2c39371085b55ca08e9abd8af7ac7a30f362a96579"
+  },
+  {
+   "audit_id": "A05",
+   "stratum": "5-8/automatic",
+   "rank": 13,
+   "reserve": false,
+   "video_id": "inouknkDhEI",
+   "channel": "Regatul Copiilor",
+   "start_s": 2940,
+   "end_s": 3000,
+   "text_sha256": "1adbf4f2b67496672654aeb7089486493db7b330e159931060685cc84a81cbe9"
+  },
+  {
+   "audit_id": "A14",
+   "stratum": "5-8/automatic",
+   "rank": 14,
+   "reserve": false,
+   "video_id": "Ni6JTmIAMio",
+   "channel": "BabyRiki Romana - Desene animate pentru copii",
+   "start_s": 1080,
+   "end_s": 1140,
+   "text_sha256": "8b9e600d722b2d3bd515e60229efea78ddf3c9634c11dee757cadd9d14931529"
+  },
+  {
+   "audit_id": "A22",
+   "stratum": "5-8/automatic",
+   "rank": 15,
+   "reserve": false,
+   "video_id": "i9ty046CSUg",
+   "channel": "Fixiki - desene animate in romana",
+   "start_s": 1320,
+   "end_s": 1380,
+   "text_sha256": "647cfcb167a5d0648e5230cd22a27a10c8a6b98ace43f885f5cc16e839ea9db4"
+  },
+  {
+   "audit_id": "A44",
+   "stratum": "5-8/automatic",
+   "rank": 16,
+   "reserve": true,
+   "video_id": "Vn5IdGdzhsU",
+   "channel": "TraLaLa - Cantece si desene animate pentru copii",
+   "start_s": 2160,
+   "end_s": 2220,
+   "text_sha256": "aa1cf7aeec218375674207f3e1a0b43902cbf81f69df8855d0043dd67aaf1f77"
+  },
+  {
+   "audit_id": "A08",
+   "stratum": "5-8/automatic",
+   "rank": 17,
+   "reserve": true,
+   "video_id": "F3G13Lw7L08",
+   "channel": "Disney Romania",
+   "start_s": 60,
+   "end_s": 120,
+   "text_sha256": "66cef7057c00cc2878e233d30e58be1a0908fddaf049f6d73636c93f051d0fda"
+  },
+  {
+   "audit_id": "A12",
+   "stratum": "5-8/automatic",
+   "rank": 18,
+   "reserve": true,
+   "video_id": "G0OqIkgZqlA",
+   "channel": "TraLaLa - Cantece si desene animate pentru copii",
+   "start_s": 0,
+   "end_s": 60,
+   "text_sha256": "059077fcbdc524cd8986473e69cac95ff2472359673b42540003d7e927d1c1c7"
+  },
+  {
+   "audit_id": "A40",
+   "stratum": "5-8/automatic",
+   "rank": 19,
+   "reserve": true,
+   "video_id": "JW2gDspCe-s",
+   "channel": "Cry Babies România",
+   "start_s": 1740,
+   "end_s": 1800,
+   "text_sha256": "17fa3704f164544724c4d184e88798ff48f368500b15bd05b53693f9429d8ed8"
+  },
+  {
+   "audit_id": "A21",
+   "stratum": "5-8/manual",
+   "rank": 0,
+   "reserve": false,
+   "video_id": "z6Xr1ZCq7po",
+   "channel": "Fixiki - desene animate in romana",
+   "start_s": 840,
+   "end_s": 900,
+   "text_sha256": "857a681053fcc722f369b4b7c90aafdeaffdf42eab2ca5ea2b6bce2446699f4d"
+  },
+  {
+   "audit_id": "A02",
+   "stratum": "5-8/manual",
+   "rank": 1,
+   "reserve": false,
+   "video_id": "7bgI2702FCg",
+   "channel": "Fixiki - desene animate in romana",
+   "start_s": 1620,
+   "end_s": 1680,
+   "text_sha256": "dbc4db676244212f0434972beb423845ac90ec59a450d87df2a0518196f2ed5c"
+  },
+  {
+   "audit_id": "A31",
+   "stratum": "5-8/manual",
+   "rank": 2,
+   "reserve": false,
+   "video_id": "XqDRQhulHfY",
+   "channel": "Copilasi Dragalasi",
+   "start_s": 120,
+   "end_s": 180,
+   "text_sha256": "158ed73f8dce13bc0ec4614c85522c97aa533b2609eda4bcd146698a5e0443cb"
+  },
+  {
+   "audit_id": "A19",
+   "stratum": "5-8/manual",
+   "rank": 3,
+   "reserve": false,
+   "video_id": "G8w8DozuOhc",
+   "channel": "HeyKids - Desene animate si povesti pentru copii",
+   "start_s": 360,
+   "end_s": 411,
+   "text_sha256": "63ef46f09e62d4b4972ca211d584c5d13c5116595d7867e8c5631fd55aa549ae"
+  },
+  {
+   "audit_id": "A09",
+   "stratum": "5-8/manual",
+   "rank": 4,
+   "reserve": true,
+   "video_id": "rXGmp0ARp2o",
+   "channel": "Disney Romania",
+   "start_s": 1080,
+   "end_s": 1140,
+   "text_sha256": "8e0bd4566cb78b8dab75194246e187092bccb4c5e8f3b5e3c1f4fde2c7336c8e"
+  },
+  {
+   "audit_id": "A04",
+   "stratum": "5-8/manual",
+   "rank": 5,
+   "reserve": true,
+   "video_id": "z6Xr1ZCq7po",
+   "channel": "Fixiki - desene animate in romana",
+   "start_s": 1920,
+   "end_s": 1980,
+   "text_sha256": "857a681053fcc722f369b4b7c90aafdeaffdf42eab2ca5ea2b6bce2446699f4d"
+  }
+ ]
+}

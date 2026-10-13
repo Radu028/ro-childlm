@@ -1,0 +1,7 @@
+{
+ "model": "BabyLM-community/ron-baseline-small",
+ "date": "2026-08-29",
+ "accuracy_percent": 74.12451361867706,
+ "published_accuracy_percent": 74.1,
+ "note": "Romanian MultiBLiMP; only the score of this evaluation was kept, not its checkpoint revision or per-pair results"
+}
