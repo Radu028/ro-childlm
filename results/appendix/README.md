@@ -51,7 +51,7 @@ Pilot transcription audit (Appendix I):
   audio label.
 - `asr-agreement.csv`: the 34 classified caption differences on agreement-bearing words, with
   `word_end` and `second_person_i` flags for the 9 feature changes.
-- `asr-agreement-checks.csv`: the two 60-word checks of the agreement-bearing selection.
+- `asr-agreement-checks.csv`: the two 200-word checks of the agreement-bearing selection (IDs and yes or no).
 - `asr-pilot.json`: Table 12 and the counts for the sample and agreement, written by `asr_pilot`.
 
 Released baseline (Appendix J):

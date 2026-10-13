@@ -153,12 +153,12 @@
  },
  "checks": {
   "selected": {
-   "checked": 60,
-   "agreement_bearing": 60
+   "checked": 200,
+   "agreement_bearing": 199
   },
   "other": {
-   "checked": 60,
-   "agreement_bearing": 3
+   "checked": 200,
+   "agreement_bearing": 8
   }
  }
 }

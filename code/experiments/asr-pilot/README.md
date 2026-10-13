@@ -54,7 +54,8 @@ such a word is classified by hand as a feature change, a deletion, a lexical
 substitution or a word split in two with the same letters (errors), or as a word
 present at an adjacent position, another form with the same features, or
 uncertain (left out of the denominator). Two words the tagger gets wrong in context are left out by hand.
-Two random samples of 60 words check the selection.
+Two random samples of 200 words, one from the selected words and one from the
+others, check the selection by hand.
 
 ## What is released
 
@@ -67,7 +68,7 @@ Two random samples of 60 words check the selection.
   normalized reference. For the 9 feature changes, `word_end` marks a change
   only at the end of the word and `second_person_i` one that adds or drops the
   second-person -i.
-- `results/appendix/asr-agreement-checks.csv`: the two 60-word checks.
+- `results/appendix/asr-agreement-checks.csv`: the two 200-word checks.
 - `results/appendix/asr-pilot.json`: the numbers the command below prints.
 
 ```bash
@@ -77,7 +78,7 @@ python -m romanian_childlm.analysis.asr_pilot
 writes `asr-pilot.json` and prints Table 12; the sample's minutes, videos,
 channels and name tokens; WER by audio label; the categories of the 34
 differences, including how many of the 9 feature changes differ only at the
-word end or involve the second-person -i; and the two 60-word checks.
+word end or involve the second-person -i; and the two 200-word checks.
 Statements that need the words themselves (the examples, which deletions fall
 in repeated song lines, the parts of speech of the missed words) are not
 reproducible from these files. The reference transcriptions, the alignments and

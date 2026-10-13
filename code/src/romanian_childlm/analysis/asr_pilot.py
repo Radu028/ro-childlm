@@ -183,8 +183,12 @@ def main():
             "agreement-bearing"
         )
     others = sum(w["words"] for w in windows) - sum(w["agreement_words"] for w in windows)
-    missed = sum(c["agreement_bearing"] == "yes" for c in checks if c["sample"] == "other")
-    print(f"about {round(others * missed / 60)} of the {others} other words bear agreement")
+    other_checks = [c for c in checks if c["sample"] == "other"]
+    missed = sum(c["agreement_bearing"] == "yes" for c in other_checks)
+    print(
+        f"about {round(others * missed / len(other_checks))} of the {others} "
+        "other words bear agreement"
+    )
 
     report.update(
         minutes=minutes,
