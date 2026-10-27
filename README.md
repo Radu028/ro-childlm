@@ -1,7 +1,22 @@
 # Romanian ChildLM experiments
 
-Code and results for "Romanian Small Language Models Trained on Native
-Child-Targeted Media" (LP4FM workshop, NeurIPS 2026).
+Code and results for [Romanian Small Language Models Trained on Native
+Child-Targeted Media](https://openreview.net/forum?id=JitnCb895x), by Radu-Stefan Popa,
+Adina Camelia Bleotu and Sergiu Nisioi. NeurIPS 2026 Workshop on Linguistic
+Principles for Foundation Models (LP4FM), accepted poster, non-archival.
+
+We collect 10M words of Romanian captions from child-targeted videos, starting
+from YouTube Kids, train GPT-2 and GPT-BERT on them under four protocols, and
+evaluate agreement accuracy on Romanian MultiBLiMP.
+
+- With GPT-BERT, accuracy rises from 68.2% at 1M words to 74.7% at 10M.
+- At a matched 1M-word budget, models trained on the BabyBabelLM Romanian corpus
+  outperform models trained on caption subsamples. Most of this gap comes from
+  subject-verb person agreement.
+- Added to BabyBabelLM, the captions help GPT-BERT more than repeating the
+  BabyBabelLM sample.
+
+## Contents
 
 - [code/](code/README.md): training and evaluation for all three models.
 - [code/experiments/](code/experiments/README.md): the retraining runs, controlled comparisons and
